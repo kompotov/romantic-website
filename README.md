@@ -25,7 +25,7 @@
 Спочатку склонуй репозиторій:
 
 ```powershell
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/kompotov/romantic-website.git
 cd your-repo
 ```
 
