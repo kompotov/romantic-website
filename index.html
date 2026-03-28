@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Романтичне запрошення</title>
+  <link rel="stylesheet" href="./public/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./favicon.png">
+
+  <meta name="description" content="Невеликий романтичний сайт-запрошення українською мовою, який можна подарувати коханій людині." />
+  <meta property="og:title" content="Романтичне запрошення 💌" />
+  <meta property="og:description" content="Милий романтичний сайт для особливого запрошення або подарунка." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://placecats.com/150/150" />
+</head>
+
+<body>
+
+<audio id="decision-music" src="./public/audio/pobachennya.mp3" loop></audio>
+<audio id="stars-music" src="./public/audio/zirki.mp3" loop></audio>
+<audio id="stars-loop" src="./public/audio/zirki-loop.mp3" loop></audio>
+
+<!-- 🌑 INTRO SCREEN -->
+<div id="intro-screen">
+  <div class="intro-content">
+    <h1>Якщо це посилання не для тебе, краще не підглядати</h1>
+    <p>А якщо для тебе, натисни, щоб почати ✨</p>
+  </div>
+</div>
+
+<!-- 💌 MAIN UI -->
+<div class="container fade-layer" id="main-ui">
+  <div class="banner-gif">
+    <img id="banner" src="./public/images/pepe-shy.gif" alt="banner" />
+  </div>
+
+  <h1 id="question-heading">
+    У мене є важливе запитання: підеш зі мною на побачення?
+  </h1>
+
+  <div class="buttons">
+    <button id="yes-button">Так</button>
+    <button id="no-button">Ні</button>
+  </div>
+</div>
+
+<!-- ⭐ STAR SCENE (hidden initially) -->
+<canvas id="starfield"></canvas>
+
+<script type="module" src="./public/js/script.js"></script>
+
+</body>
+</html>
